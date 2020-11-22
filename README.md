@@ -5,8 +5,11 @@ This repository contains data analysis comparing Baltimore City's and Chicago's 
 For this project, I chose to analyze employment rates in Baltimore City, MD and Chicago, IL (hometown), segmented by parent income. 
 The explored metric is employment rate (%) based on parent income (high, medium, and low). This is interesting because some studies cite a [positive relationship between parent income and a child's employment/wealth outcomes](https://www.irp.wisc.edu/publications/focus/pdfs/foc272e.pdf). 
 Comparing Baltimore and Chicago's employment maps, we can see that the two cities are visually similar, with large clusters of low employment areas and small clusters of high employment near the city centers. 
+
 ![alt text](https://github.com/matthewprk/comparing-baltimore-and-chicago-employment-rates-based-on-parent-income-using-PYTHON/blob/main/Screen%20Shot%202020-11-22%20at%206.14.01%20PM.png) 
+
 ![alt text]( https://github.com/matthewprk/comparing-baltimore-and-chicago-employment-rates-based-on-parent-income-using-PYTHON/blob/main/Screen%20Shot%202020-11-22%20at%206.13.21%20PM.png)
+
 With our discussions regarding social mobility, it's important to understand if parent income is a driver of employment in these cities, how they differ, and what can be done to increase employment. 
 
 ## Business Question
