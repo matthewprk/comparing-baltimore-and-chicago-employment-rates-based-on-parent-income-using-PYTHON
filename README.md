@@ -52,25 +52,34 @@ Chicago's employment is 2.5% higher than Baltimore, which is significant given t
 
 ![alt text](https://github.com/matthewprk/comparing-baltimore-and-chicago-employment-rates-based-on-parent-income-using-PYTHON/blob/main/Screen%20Shot%202020-11-22%20at%205.54.44%20PM.png)
 
-- The average employment rate in Baltimore is 71.48%. 
-- The average employment rate in Chicago is 74.41%. 
-- In Baltimore, employment for people with high-income parents is 78.00%, middle-income parents is 74.51%, and low-income parents is 69.06%.
-- In Chicago, employment for people with high-income parents is 76.98%, middle-income parents is 76.40%, and low-income parents is 71.74%.
-This shows the difference in employment rates for Baltimore and Chicago, segmented by parent income. Here, we see that Baltimore's employment rate for people with low-income parents is ~2% lower than Chicago's and could be driving a lower overall employment rate. 
+- In Baltimore, employment for people with high-income parents is 78.9%, middle-income parents is 75.0%, and low-income parents is 69.7%.
+- In Chicago, employment for people with high-income parents is 80.2%, middle-income parents is 76.8%, and low-income parents is 72.1%.
+
+Chicago exhibits higher employment rates for each income group. The most notable differences are 1) The 2.4% higher employment for the low-income parent group 2) The smaller employment delta between those with high-income parents and low-income parents. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OydoEiz-Q99r4Tz1ehHyobecL2W-I3VW?usp=sharing)
 
 #### Multiple Linear Regression
+* Note that I did not determine the statistical significance of the coefficients. 
+
+The goal was to determine whether or not one's parent-income group (high, medium, or low) would be a predictor of average employment for all parent-income groups. 
+- Assuming all variables are significant: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OydoEiz-Q99r4Tz1ehHyobecL2W-I3VW?usp=sharing
+  - Chicago's intercept is more than double that of Baltimore's
+  - Middle-income parents have relatively the same impact on employment in both cities
+  - Being in the high or low-income parent group has double the impact on employment in Chicago than in Baltimore
+  
+Baltimore Linear Regression
 ![alt text](https://github.com/matthewprk/comparing-baltimore-and-chicago-employment-rates-based-on-parent-income-using-PYTHON/blob/main/Screen%20Shot%202020-11-22%20at%205.56.15%20PM.png)
 
+Chicago Linear Regression
 ![alt text](https://github.com/matthewprk/comparing-baltimore-and-chicago-employment-rates-based-on-parent-income-using-PYTHON/blob/main/Screen%20Shot%202020-11-22%20at%205.57.21%20PM.png)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OydoEiz-Q99r4Tz1ehHyobecL2W-I3VW?usp=sharing)
-
-## Business Answer
-
 ## Comparing Python and Excel
+There were three main differences between my experiences with Excel and Python:
+- Data Prep: When data cleaning and aggregating, Colab required the importing of certain modules. In contrast, Excel has most of the functionality already built in. I personally found it easier to clean and aggregate data in Excel. This is because the dataset is always viewable in Excel, which makes it easier for me to appy filters, standardize columns, and merge worksheets. However, I see myself using Python for larger datasets for which Excel slows down. 
+- Data Analysis: Python in Colab required downloading modules like pandas and numpy. Similar to Excel, which required downloading Data Analysis Tool Paks like Solver. Personally, I found it easier to create pivot tables, charts, and linear regressions in Excel. Likewise, I found the customizability of Excel's visuals to be more intuitive, especially with Pivot Charts. While I see myself using Excel for future analyses, Python can be valuable for larger datasets.
+- Organization: When organizing my data analysis, I was pleased by how structured Colab is. The ability to create headers, leave comments, and create text cells makes it easier to follow the my analysis. Likewise, it was useful knowing where an error was in my code. In collaborative environments, I can see myself preferring to use Python because it is easier for others to follow the work or pinpoint errors. 
 
 ## Summary and Next Steps 
-Parent income affects employment rates. Generally, average employment rate increases as parent income increases for both cities, though we cannot assert causation. Baltimore's employment rate for people with low-income parents is lower than Chicago's, which could be driving lower overall employment. 
+Parent income affects employment rates in both Baltimore and Chicago. Generally, average employment rate increases as parent income increases for both cities, though we cannot assert causation. Baltimore's employment rate for people with low-income parents is >2% lower than Chicago's, which could be driving lower overall employment. This means that Chicago residents with high-income parents and low-income parents are more likely to be employed than their comaprable groups in Baltimore. 
 
 The next steps are to look at why parent income influences employment rates. I'd like to explore data about the job market and education levels to see if those are impacted by parent income. Likewise, external factors like industries or types of jobs are important to consider for each city. 
 
