@@ -4,15 +4,22 @@ This repository contains data analysis comparing Baltimore City's and Chicago's 
 ## Business Question
 ## Data Analysis
 ### Data Sources
-#### Baltimore City Employment Data - Employment Data by Parent Income
+
+#### Baltimore City Employment Data - Employment Rates by Parent Income
 - [Baltimore City Employment Data All Parent Incomes](https://github.com/matthewprk/comparing-baltimore-and-chicago-employment-rates-based-on-parent-income-using-PYTHON/blob/main/BaltimoreEmployment_All_PI.csv) 
 - [Baltimore City Employment Data High Parent Incomes](https://github.com/matthewprk/comparing-baltimore-and-chicago-employment-rates-based-on-parent-income-using-PYTHON/blob/main/BaltimoreEmployment_High_PI.csv) 
 - [Baltimore City Employment Data Medium Parent Incomes](https://github.com/matthewprk/comparing-baltimore-and-chicago-employment-rates-based-on-parent-income-using-PYTHON/blob/main/BaltimoreEmployment_Med_PI.csv) 
 - [Baltimore City Employment Data Low Parent Incomes](https://github.com/matthewprk/comparing-baltimore-and-chicago-employment-rates-based-on-parent-income-using-PYTHON/blob/main/BaltimoreEmployment_Low_PI.csv) 
 
-[Chicago Employment Data](https://github.com/matthewprk/comparing_employment_data_in_baltimore_city_and_chicago/blob/master/Baltimore%20City%20Employment%20Data.xls) - This dataset shows employment data for Chicago based on parent income.
+#### Chicago Employment Data - Employment Rates by Parent Income
+- [Chicago Employment Data All Parent Incomes](https://github.com/matthewprk/comparing-baltimore-and-chicago-employment-rates-based-on-parent-income-using-PYTHON/blob/main/ChicagoEmployment_All_PI.csv) 
+- [Chicago Employment Data High Parent Incomes](https://github.com/matthewprk/comparing-baltimore-and-chicago-employment-rates-based-on-parent-income-using-PYTHON/blob/main/ChicagoEmployment_High_PI.csv) 
+- [Chicago Employment Data Medium Parent Incomes](https://github.com/matthewprk/comparing-baltimore-and-chicago-employment-rates-based-on-parent-income-using-PYTHON/blob/main/ChicagoEmployment_Med_PI.csv) 
+- [Chicago Employment Data Low Parent Incomes](https://github.com/matthewprk/comparing-baltimore-and-chicago-employment-rates-based-on-parent-income-using-PYTHON/blob/main/ChicagoEmployment_Low_PI.csv)
 
-[Opportunity Atlas](https://www.opportunityatlas.org/) - This is the website from which tract datasets on employment rates and parent income were originally pulled from.
+#### Opportunity Atlas - Source for CSV Tract Data in Baltimore and Chicago
+[Opportunity Atlas](https://www.opportunityatlas.org/) 
+
 ### Data Question
 ### Data Answer
 
