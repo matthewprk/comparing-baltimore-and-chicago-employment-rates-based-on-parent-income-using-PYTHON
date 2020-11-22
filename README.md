@@ -18,7 +18,7 @@ This repository contains data analysis comparing Baltimore City's and Chicago's 
 - [Chicago Employment Data Low Parent Incomes](https://github.com/matthewprk/comparing-baltimore-and-chicago-employment-rates-based-on-parent-income-using-PYTHON/blob/main/ChicagoEmployment_Low_PI.csv)
 
 #### Opportunity Atlas - Source for CSV Tract Data in Baltimore and Chicago
-[Opportunity Atlas](https://www.opportunityatlas.org/) 
+- [Opportunity Atlas](https://www.opportunityatlas.org/) 
 
 ### Data Question
 ### Data Answer
