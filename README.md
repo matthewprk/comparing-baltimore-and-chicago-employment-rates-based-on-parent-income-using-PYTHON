@@ -36,14 +36,23 @@ How does parent income contribute to employment rates in Baltimore and Chicago a
 - Metric explored: Employment Rate = # Employed / # Labor Force
 
 #### Plotly Express
+![alt text](https://github.com/matthewprk/comparing-baltimore-and-chicago-employment-rates-based-on-parent-income-using-PYTHON/blob/main/Screen%20Shot%202020-11-22%20at%205.52.14%20PM.png) 
 
 #### Pivot Tables
+![alt text](https://github.com/matthewprk/comparing-baltimore-and-chicago-employment-rates-based-on-parent-income-using-PYTHON/blob/main/Screen%20Shot%202020-11-22%20at%205.53.39%20PM.png)
+
+![alt text](https://github.com/matthewprk/comparing-baltimore-and-chicago-employment-rates-based-on-parent-income-using-PYTHON/blob/main/Screen%20Shot%202020-11-22%20at%205.54.44%20PM.png)
+
 - The average employment rate in Baltimore is 71.48%. 
 - The average employment rate in Chicago is 74.41%. 
 - In Baltimore, employment for people with high-income parents is 78.00%, middle-income parents is 74.51%, and low-income parents is 69.06%.
 - In Chicago, employment for people with high-income parents is 76.98%, middle-income parents is 76.40%, and low-income parents is 71.74%.
+This shows the difference in employment rates for Baltimore and Chicago, segmented by parent income. Here, we see that Baltimore's employment rate for people with low-income parents is ~2% lower than Chicago's and could be driving a lower overall employment rate. 
 
 #### Multiple Linear Regression
+![alt text](https://github.com/matthewprk/comparing-baltimore-and-chicago-employment-rates-based-on-parent-income-using-PYTHON/blob/main/Screen%20Shot%202020-11-22%20at%205.56.15%20PM.png)
+
+![alt text](https://github.com/matthewprk/comparing-baltimore-and-chicago-employment-rates-based-on-parent-income-using-PYTHON/blob/main/Screen%20Shot%202020-11-22%20at%205.57.21%20PM.png)
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OydoEiz-Q99r4Tz1ehHyobecL2W-I3VW?usp=sharing)
 
@@ -57,15 +66,4 @@ Parent income affects employment rates. Generally, average employment rate incre
 The next steps are to look at why parent income influences employment rates. I'd like to explore data about the job market and education levels to see if those are impacted by parent income. Likewise, external factors like industries or types of jobs are important to consider for each city. 
 
 This is important to me, because addressing employment rates, especially amongst those with low-income parents, is critical to social mobility and thriving cities.
-
-
-
-
-
-
-
-### Employment Rates Segmented by Parent Income Visualiztion
-![alt text](https://github.com/matthewprk/comparing_employment_data_in_baltimore_city_and_chicago/blob/master/Employment%20Rates%20Segmented%20By%20Parent%20Income%20.png) 
-
-This shows the difference in employment rates for Baltimore and Chicago, segmented by parent income. Here, we see that Baltimore's employment rate for people with low-income parents is ~2% lower than Chicago's and could be driving a lower overall employment rate. 
 
