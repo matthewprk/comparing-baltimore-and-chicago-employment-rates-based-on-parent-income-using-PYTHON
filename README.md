@@ -61,7 +61,7 @@ Chicago exhibits higher employment rates for each income group. The most notable
 * Note that I did not determine the statistical significance of the coefficients. 
 
 The goal was to determine whether or not one's parent-income group (high, medium, or low) would be a predictor of average employment for all parent-income groups. 
-- Assuming all variables are significant: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OydoEiz-Q99r4Tz1ehHyobecL2W-I3VW?usp=sharing
+- Assuming all variables are significant: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OydoEiz-Q99r4Tz1ehHyobecL2W-I3VW?usp=sharing)
   - Chicago's intercept is more than double that of Baltimore's
   - Middle-income parents have relatively the same impact on employment in both cities
   - Being in the high or low-income parent group has double the impact on employment in Chicago than in Baltimore
@@ -79,9 +79,11 @@ There were three main differences between my experiences with Excel and Python:
 - Organization: When organizing my data analysis, I was pleased by how structured Colab is. The ability to create headers, leave comments, and create text cells makes it easier to follow the my analysis. Likewise, it was useful knowing where an error was in my code. In collaborative environments, I can see myself preferring to use Python because it is easier for others to follow the work or pinpoint errors. 
 
 ## Summary and Next Steps 
-Parent income affects employment rates in both Baltimore and Chicago. Generally, average employment rate increases as parent income increases for both cities, though we cannot assert causation. Baltimore's employment rate for people with low-income parents is >2% lower than Chicago's, which could be driving lower overall employment. This means that Chicago residents with high-income parents and low-income parents are more likely to be employed than their comaprable groups in Baltimore. 
+Parent income affects employment rates in both Baltimore and Chicago. Generally, average employment rate increases as parent income increases for both cities, though we cannot assert causation. Chicago's employment rate is higher than Baltimore's for each parent-income group. Baltimore's employment rate for people with low-income parents is >2% lower than Chicago's, which could be driving lower overall employment. This means that Chicago residents with high-income parents and low-income parents are more likely to be employed than their comaprable groups in Baltimore. Thus, it'd be interesting to explore why it's easier for both of these groups to be employed in Chicago. 
 
-The next steps are to look at why parent income influences employment rates. I'd like to explore data about the job market and education levels to see if those are impacted by parent income. Likewise, external factors like industries or types of jobs are important to consider for each city. 
+The next steps are to look at why parent income influences employment rates. 
+- Person-specific factors: education, demographics, incarceration 
+- City-specific factors: prevalent industries, available jobs, economic growth, policies
 
-This is important to me, because addressing employment rates, especially amongst those with low-income parents, is critical to social mobility and thriving cities.
+This is important to me, because addressing employment rates, especially amongst those with low-income parents, is critical to social mobility and thriving cities. Balitmore is a city where there is a strong [disconnect between one's skills and job opportunities](https://www.baltimoresun.com/opinion/op-ed/bs-ed-op-0115-baltimore-unemployment-20200115-urcqmi467vcqnlw4usgtonzwja-story.html). If we can determine what the root cause for the employment difference is, Baltimore can solve its lower employment issue. 
 
