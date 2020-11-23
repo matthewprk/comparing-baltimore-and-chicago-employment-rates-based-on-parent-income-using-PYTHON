@@ -1,1 +1,52 @@
+** Import Libraries **
+1. Import pandas, numpy, plotly.express, files from google.colab, linear_model from sklearn, LinearRegression from sklearn.linear_model, and statsmodels.api
 
+** Import Datasets **
+1. Import the 8 raw CSVs linked in the Github for employment rate data in BAL and CHI based on parent income.
+2. Use df=pd.read_csv(" ") 
+
+** Merge Data **
+1. Merge all Baltimore data sets and all Chicago datasets into separate data frames. 
+2. Use df_merge=pd.merge(df_original,df_new[["x","y"]],how='left',on='x') three times for each city. 
+
+** Rename Employment Columns **
+1. Rename the employment columns in each of the final merged datasets using df_mergeFINAL=df_mergeFINAL.rename(columns={'previous column':'new column'})
+
+** Filtering Data **
+1. Filter each dataset's Name column like so: df_BAL_filtered1=df_BAL_mergeFINAL[df_BAL_mergeFINAL['Name'].str.contains('Baltimore')] to get only values for Baltimore City
+2. Drop rows with no data using: df_BAL_filteredFINAL=df_BAL_filtered1.dropna()
+3. Create City columns for each dataset like so: df_BAL_filteredFINAL['City']='Baltimore'
+4. Repeat for Chicago dataset
+
+** Plotting Data **
+1. Use plotly.express to create an initial bar chart showing the difference in employment between Baltimore and Chicago
+2. employment_bar = px.bar(df_pivot_merge, x='City',y='Employment Rate All PI', width=600, height=700, title='Average Employment Rate for All Parent Incomes')
+
+** Pivot Tables **
+1. Create pivot rables for each city to stratify employment by parent income
+2. df_pivot_baltimore = pd.pivot_table(df_BAL_filteredFINAL,
+                                    index='City',
+                                    values=['Employment Rate All PI','Employment Rate High PI','Employment Rate Medium PI','Employment Rate Low PI'],
+                                            aggfunc = np.mean).reset_index()
+3. Repeat for Chicago
+4. Merge the two pivot tables via: df_pivot_merge = pd.concat([df_pivot_baltimore,df_pivot_chicago], axis=0)
+5. Create a pivot chart comparing the two cities and employment based on parent income
+6. mergedbar=df_pivot_merge.plot(kind='bar',
+                    x='City',
+                    title='Employment Rates by Parent Income',
+                    ylabel='Employment Rate (0.0-1.0)',
+                    fontsize=12, grid='yes', figsize=(11,9),ylim=(0,0.9))
+   mergedbar.legend(loc='center left', bbox_to_anchor=(1.0, 0.5))
+
+
+** Linear Regression **
+1. Set variables for linear regression:
+2. X=df_BAL_filteredFINAL[['Employment Rate High PI','Employment Rate Medium PI','Employment Rate Low PI']]
+   Y=df_BAL_filteredFINAL['Employment Rate All PI']
+3. Fit the variables:
+4. regr=linear_model.LinearRegression()
+   regr.fit(X,Y)
+5. Print the coefficients and intercept:
+6. print('Intercept: \n', regr.intercept_)
+   print('Coefficients: \n', regr.coef_)
+7. Repeat for Chicago
